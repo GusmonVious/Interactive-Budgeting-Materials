@@ -1,0 +1,130 @@
+/* Main Styles */
+:root {
+  /* Color Palette */
+  --primary-100: #e6f0ff;
+  --primary-200: #bdd7ff;
+  --primary-300: #94beff;
+  --primary-400: #6ba5ff;
+  --primary-500: #428cff;
+  --primary-600: #1a73ff;
+  
+  --secondary-100: #e6f9f7;
+  --secondary-200: #b3edea;
+  --secondary-300: #80e2dc;
+  --secondary-400: #4dd6ce;
+  --secondary-500: #1acac0;
+  --secondary-600: #00bfb3;
+  
+  --accent-100: #fff0e6;
+  --accent-200: #ffd6b3;
+  --accent-300: #ffbd80;
+  --accent-400: #ffa34d;
+  --accent-500: #ff8a1a;
+  --accent-600: #ff7000;
+  
+  --neutral-100: #ffffff;
+  --neutral-200: #f5f5f5;
+  --neutral-300: #e0e0e0;
+  --neutral-400: #bdbdbd;
+  --neutral-500: #9e9e9e;
+  --neutral-600: #757575;
+  --neutral-700: #616161;
+  --neutral-800: #424242;
+  --neutral-900: #212121;
+  
+  /* Spacing System */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  --space-7: 56px;
+  --space-8: 64px;
+  
+  /* Typography */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --line-height-body: 1.5;
+  --line-height-heading: 1.2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height-body);
+  color: var(--neutral-900);
+  background: linear-gradient(135deg, var(--primary-100), var(--secondary-100));
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: var(--line-height-heading);
+  margin-bottom: var(--space-2);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin-bottom: var(--space-2);
+}
+
+a {
+  color: var(--primary-600);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary-500);
+}
+
+section {
+  padding: var(--space-5) var(--space-2);
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}

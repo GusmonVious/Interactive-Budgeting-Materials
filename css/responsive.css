@@ -1,0 +1,110 @@
+/* Responsive Styles */
+
+/* Base styles are mobile-first */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  section {
+    padding: var(--space-5) var(--space-3);
+  }
+  
+  .hero-image-container {
+    min-height: 450px;
+  }
+  
+  .excel-section,
+  .video-section,
+  .coming-soon {
+    padding: var(--space-4);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .header-content {
+    padding: var(--space-2) 0;
+  }
+  
+  .intro p {
+    font-size: 1.25rem;
+  }
+  
+  .hero-image-container {
+    min-height: 500px;
+  }
+  
+  .excel-section,
+  .video-section {
+    padding: var(--space-5);
+  }
+  
+  .excel-embed iframe {
+    height: 550px;
+  }
+  
+  .book-cover {
+    width: 220px;
+    height: 308px;
+  }
+  
+  .book-title h4 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .header-content {
+    padding: var(--space-3) 0;
+  }
+  
+  .logo {
+    font-size: 3.5rem;
+  }
+  
+  .tagline {
+    font-size: 1.5rem;
+  }
+  
+  .hero-image-container {
+    height: 600px;
+    max-height: 700px;
+  }
+  
+  .excel-section,
+  .video-section,
+  .coming-soon {
+    padding: var(--space-6);
+  }
+  
+  .excel-embed iframe {
+    height: 600px;
+  }
+  
+  .video-placeholder {
+    height: 500px;
+  }
+  
+  .book-cover {
+    width: 240px;
+    height: 336px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .excel-section,
+  .video-section,
+  .coming-soon {
+    max-width: 1200px;
+  }
+  
+  .hero-image-container {
+    height: 700px;
+  }
+}

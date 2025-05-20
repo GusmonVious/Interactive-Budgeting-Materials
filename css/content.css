@@ -1,0 +1,230 @@
+/* Content Styles */
+
+/* Intro Section */
+.intro {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-3);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.intro h2 {
+  color: var(--primary-600);
+  margin-bottom: var(--space-2);
+}
+
+.intro p {
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--neutral-800);
+}
+
+/* Hero Section */
+.hero {
+  padding: 0;
+  margin-bottom: var(--space-4);
+}
+
+.hero-image-container {
+  width: 100%;
+  height: calc(100vh - 300px);
+  min-height: 400px;
+  max-height: 600px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  animation: scaleIn 10s ease-out;
+  transition: transform 0.5s ease;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Excel Section */
+.excel-section {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+  margin: 0 auto var(--space-5);
+  padding: var(--space-4);
+}
+
+.excel-container h3 {
+  text-align: center;
+  color: var(--neutral-800);
+  margin-bottom: var(--space-3);
+}
+
+.excel-embed {
+  border: 1px solid var(--neutral-300);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: var(--space-3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.download-section {
+  text-align: center;
+  margin-top: var(--space-3);
+}
+
+.download-button {
+  display: inline-block;
+  background: linear-gradient(to right, var(--primary-500), var(--primary-600));
+  color: white;
+  font-weight: 500;
+  padding: var(--space-2) var(--space-3);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.download-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  color: white;
+  background: linear-gradient(to right, var(--primary-600), var(--primary-700));
+}
+
+.download-description {
+  font-size: 0.95rem;
+  color: var(--neutral-600);
+  margin-top: var(--space-1);
+}
+
+/* Video Section */
+.video-section {
+  max-width: 1000px;
+  margin: 0 auto var(--space-5);
+}
+
+.video-container h3 {
+  text-align: center;
+  color: var(--neutral-800);
+  margin-bottom: var(--space-3);
+}
+
+.video-placeholder {
+  background-color: var(--neutral-200);
+  border-radius: 8px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: 1px solid var(--neutral-300);
+}
+
+.video-placeholder:hover {
+  transform: scale(1.01);
+}
+
+.placeholder-content {
+  text-align: center;
+  color: var(--neutral-700);
+}
+
+.placeholder-icon {
+  margin-bottom: var(--space-2);
+  color: var(--primary-500);
+}
+
+.placeholder-content p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+/* Coming Soon Section */
+.coming-soon {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: var(--space-6);
+}
+
+.book-teaser {
+  text-align: center;
+}
+
+.book-teaser h3 {
+  margin-bottom: var(--space-3);
+  color: var(--neutral-800);
+}
+
+.book-placeholder {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--space-3);
+}
+
+.book-cover {
+  position: relative;
+  width: 200px;
+  height: 280px;
+  background: linear-gradient(135deg, var(--primary-500), var(--accent-500));
+  border-radius: 4px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
+  transform: perspective(1000px) rotateY(-10deg);
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.book-cover:hover {
+  transform: perspective(1000px) rotateY(-5deg) translateY(-8px);
+}
+
+.book-spine {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), transparent);
+}
+
+.book-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 80%;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.book-title h4 {
+  font-size: 1.2rem;
+  margin-bottom: var(--space-1);
+}
+
+.book-title p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 0;
+}
+
+.ps-note {
+  font-style: italic;
+  color: var(--neutral-700);
+  margin-top: var(--space-2);
+  font-size: 1rem;
+}
