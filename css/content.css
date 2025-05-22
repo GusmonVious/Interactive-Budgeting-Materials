@@ -78,6 +78,11 @@
   overflow: hidden;
   margin-bottom: var(--space-3);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-image: url(../assets/WorksheetSS.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 380px;
+  width: 100%;
 }
 
 .download-section {
@@ -178,20 +183,23 @@
 
 .book-cover {
   position: relative;
-  width: 200px;
-  height: 280px;
-  background: linear-gradient(135deg, var(--primary-500), var(--accent-500));
+  width: 153px;
+  height: 237px;
+  /* background: linear-gradient(135deg, var(--primary-500), var(--accent-500)); */
+  background: url(../assets/BookCover.png);
+  background-size: cover;
   border-radius: 4px;
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
   transform: perspective(1000px) rotateY(-10deg);
   transition: transform 0.5s ease;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .book-cover:hover {
   transform: perspective(1000px) rotateY(-5deg) translateY(-8px);
 }
 
+/* 
 .book-spine {
   position: absolute;
   left: 0;
@@ -199,9 +207,9 @@
   width: 20px;
   height: 100%;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.2), transparent);
-}
+} */
 
-.book-title {
+/* .book-title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -220,7 +228,7 @@
   font-size: 1rem;
   opacity: 0.9;
   margin-bottom: 0;
-}
+} */
 
 .ps-note {
   font-style: italic;
