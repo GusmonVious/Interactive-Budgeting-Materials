@@ -17,6 +17,11 @@
   .coming-soon {
     padding: var(--space-4);
   }
+
+  .excel-embed img{
+    content: 'Unavailable on Mobile, change to larger layout';
+    display: none;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
